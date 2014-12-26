@@ -52,11 +52,16 @@
             -webkit-user-select: none; /* Disable selection/copy in UIWebView */
         }
     </style>
+    <script type="text/javascript">
+    function didLoad() {
+        window.location.href="weiyou://didLoad"  // by decamincow
+    }
+</script>
 
 
 </head>
 
-	<body>
+	<body onLoad="didLoad()">
 		<div id="viewporter">
 		   <canvas id="canvas" moz-opaque></canvas>
 		</div>
